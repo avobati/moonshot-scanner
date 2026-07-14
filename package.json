@@ -1,0 +1,17 @@
+{
+  "name": "moonshot-scanner",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily self-improving scanner that ranks micro-cap stocks and crypto by the statistical profile of past explosive movers, tracks every pick, and retunes its own factor weights from realized performance. Research tool only — not financial advice.",
+  "scripts": {
+    "daily": "node --env-file-if-exists=.env src/run-daily.js",
+    "start": "node --env-file-if-exists=.env src/server.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}
